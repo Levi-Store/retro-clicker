@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Clicker Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #1a1a1a;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        .button {
+            font-size: 24px;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        .button:disabled {
+            background-color: #555;
+            cursor: not-allowed;
+        }
+        .upgrades {
+            margin-top: 20px;
+        }
+        .upgrade-button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .upgrade-button:disabled {
+            background-color: #555;
+            cursor: not-allowed;
+        }
+        .log {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retro Clicker Game</h1>
+    <p>Points: <span id="points">0</span></p>
+    <button id="click-button" class="button">Click Me!</button>
+    <div class="upgrades">
+        <button id="auto-clicker" class="upgrade-button" disabled>Buy Auto Clicker (25 pts)</button>
+        <button id="times-two" class="upgrade-button" disabled>Buy 2x Clicks (50 pts)</button>
+    </div>
+    <div id="log" class="log"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.points {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.click-button {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px #bb0000;
+}
+
+.click-button:active {
+    box-shadow: 0 2px #bb0000;
+    transform: translateY(3px);
+}
+
+.upgrades {
+    margin: 30px 0;
+}
+
+.upgrade-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px #333;
+}
+
+.upgrade-button:disabled {
+    background-color: #333;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.logs {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+#upgrade-logs {
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: inline-block;
+    width: 80%;
+}
